@@ -1,189 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
-    <script src="https://kit.fontawesome.com/db99b20772.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/db99b20772.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Prectical-2</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main">
-        <div class="navbar">
-            <div class="logo"><h1>Panto</h1></div>
-            <nav class="nav">
-                <ul class="nav-item">
-                    <li>
-                        <select name="Furniture" id="Furniture" class="list-furniture">
-                            <option value="Furniture">Furniture</option>
-                            <option value="Furniture">Furniture</option>
-                            <option value="Furniture">Furniture</option>
-                        </select>
-                    </li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="cart">
-                <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.007 0.833313C16.8036 0.833313 19.9249 3.81668 20.0833 7.59694H20.0463C20.0508 7.70682 20.0296 7.81624 19.9846 7.91665H20.2058C21.9299 7.91665 23.7353 9.11162 24.4592 11.9964L24.5378 12.3367L25.6271 21.1125C26.411 26.7098 23.3487 29.0636 19.1713 29.1633L18.8912 29.1666H7.14708C2.90168 29.1666 -0.369729 27.6196 0.349565 21.4933L0.398615 21.1125L1.50041 12.3367C2.0437 9.23016 3.86761 8.00483 5.625 7.92127L5.81993 7.91665H5.93067C5.912 7.81089 5.912 7.7027 5.93067 7.59694C6.08911 3.81668 9.21041 0.833313 13.007 0.833313ZM8.88741 12.6331C8.19593 12.6331 7.63538 13.2101 7.63538 13.9218C7.63538 14.6335 8.19593 15.2105 8.88741 15.2105C9.57889 15.2105 10.1394 14.6335 10.1394 13.9218L10.1297 13.7602C10.0524 13.1247 9.5257 12.6331 8.88741 12.6331ZM17.0882 12.6331C16.3968 12.6331 15.8362 13.2101 15.8362 13.9218C15.8362 14.6335 16.3968 15.2105 17.0882 15.2105C17.7797 15.2105 18.3403 14.6335 18.3403 13.9218C18.3403 13.2101 17.7797 12.6331 17.0882 12.6331ZM12.9515 2.67836C10.2257 2.67836 8.01594 4.88048 8.01594 7.59694C8.03462 7.7027 8.03462 7.81089 8.01594 7.91665H17.9487C17.9093 7.81457 17.8884 7.70631 17.887 7.59694C17.887 4.88048 15.6773 2.67836 12.9515 2.67836Z" fill="white"/>
-                </svg>
-                <div class="ellipse">0</div>
-                </div>
+      <div class="navbar">
+        <div class="logo"><h1>Panto</h1></div>
+        <nav class="nav">
+          <ul class="nav-item">
+            <li>
+              <select name="Furniture" id="Furniture" class="list-furniture">
+                <option value="Furniture">Furniture</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Furniture">Furniture</option>
+              </select>
+            </li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="cart">
+          <svg
+            width="26"
+            height="30"
+            viewBox="0 0 26 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.007 0.833313C16.8036 0.833313 19.9249 3.81668 20.0833 7.59694H20.0463C20.0508 7.70682 20.0296 7.81624 19.9846 7.91665H20.2058C21.9299 7.91665 23.7353 9.11162 24.4592 11.9964L24.5378 12.3367L25.6271 21.1125C26.411 26.7098 23.3487 29.0636 19.1713 29.1633L18.8912 29.1666H7.14708C2.90168 29.1666 -0.369729 27.6196 0.349565 21.4933L0.398615 21.1125L1.50041 12.3367C2.0437 9.23016 3.86761 8.00483 5.625 7.92127L5.81993 7.91665H5.93067C5.912 7.81089 5.912 7.7027 5.93067 7.59694C6.08911 3.81668 9.21041 0.833313 13.007 0.833313ZM8.88741 12.6331C8.19593 12.6331 7.63538 13.2101 7.63538 13.9218C7.63538 14.6335 8.19593 15.2105 8.88741 15.2105C9.57889 15.2105 10.1394 14.6335 10.1394 13.9218L10.1297 13.7602C10.0524 13.1247 9.5257 12.6331 8.88741 12.6331ZM17.0882 12.6331C16.3968 12.6331 15.8362 13.2101 15.8362 13.9218C15.8362 14.6335 16.3968 15.2105 17.0882 15.2105C17.7797 15.2105 18.3403 14.6335 18.3403 13.9218C18.3403 13.2101 17.7797 12.6331 17.0882 12.6331ZM12.9515 2.67836C10.2257 2.67836 8.01594 4.88048 8.01594 7.59694C8.03462 7.7027 8.03462 7.81089 8.01594 7.91665H17.9487C17.9093 7.81457 17.8884 7.70631 17.887 7.59694C17.887 4.88048 15.6773 2.67836 12.9515 2.67836Z"
+              fill="white"
+            />
+          </svg>
+          <div class="ellipse">0</div>
         </div>
-        <div class="content">
-            <div class="main-text">
-                <h1>Make your interior more minimalistic & modern</h1>
-            </div >
-            <div class="text"><p>Turn your room with panto into a lot more minimalist and modern with ease and speed</p></div>
-            <div class="search">
-                <input type="text" class="input" placeholder="Search furniture">
-                <button class="search-button"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.75 15.75L12.3855 12.3795M14.25 7.875C14.25 9.56576 13.5784 11.1873 12.3828 12.3828C11.1873 13.5784 9.56576 14.25 7.875 14.25C6.18424 14.25 4.56274 13.5784 3.36719 12.3828C2.17165 11.1873 1.5 9.56576 1.5 7.875C1.5 6.18424 2.17165 4.56274 3.36719 3.36719C4.56274 2.17165 6.18424 1.5 7.875 1.5C9.56576 1.5 11.1873 2.17165 12.3828 3.36719C13.5784 4.56274 14.25 6.18424 14.25 7.875Z" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    </button>
-            </div>
+      </div>
+      <div class="content">
+        <div class="main-text">
+          <h1>Make your interior more minimalistic & modern</h1>
         </div>
+        <div class="text">
+          <p>
+            Turn your room with panto into a lot more minimalist and modern with
+            ease and speed
+          </p>
+        </div>
+        <div class="search">
+          <input type="text" class="input" placeholder="Search furniture" />
+          <button class="search-button">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.75 15.75L12.3855 12.3795M14.25 7.875C14.25 9.56576 13.5784 11.1873 12.3828 12.3828C11.1873 13.5784 9.56576 14.25 7.875 14.25C6.18424 14.25 4.56274 13.5784 3.36719 12.3828C2.17165 11.1873 1.5 9.56576 1.5 7.875C1.5 6.18424 2.17165 4.56274 3.36719 3.36719C4.56274 2.17165 6.18424 1.5 7.875 1.5C9.56576 1.5 11.1873 2.17165 12.3828 3.36719C13.5784 4.56274 14.25 6.18424 14.25 7.875Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
     <div class="second">
-        <div class="one"><p>Why
-            Choosing Us</p>
+      <div class="one"><p>Why Choosing Us</p></div>
+      <div class="div-containor">
+        <div class="containor">
+          <div class="title"><h2>Luxury facilities</h2></div>
+          <div class="description">
+            The advantage of hiring a workspace with us is that givees you
+            comfortable service and all-around facilities.
+          </div>
+          <div class="link">
+            <a href="#"
+              ><p class="info">More Info</p>
+              <svg
+                width="39"
+                height="13"
+                viewBox="0 0 39 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.5 6.40024H38M38 6.40024C38 6.40024 33.5119 3.44867 32.6 1.00024M38 6.40024C38 6.40024 34.0324 9.17362 32.6 11.8002"
+                  stroke="#E58411"
+                  stroke-linecap="square"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="div-containor">
-            <div class="containor">
-                <div class="title"><h2>Luxury facilities</h2></div>
-                <div class="description">The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</div>
-                <div class="link"><a href="#"><p class="info">More Info</p> <svg width="39" height="13" viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.5 6.40024H38M38 6.40024C38 6.40024 33.5119 3.44867 32.6 1.00024M38 6.40024C38 6.40024 34.0324 9.17362 32.6 11.8002" stroke="#E58411" stroke-linecap="square"/>
-                    </svg>
-                    </a></div>
-            </div>
-            <div class="containor">
-                <div class="title"><h2>Affordable Price</h2></div>
-                <div class="description">You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are oly here.</div>
-                <div class="link"><a href="#"><p class="info">More Info</p> <svg width="39" height="13" viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.5 6.40024H38M38 6.40024C38 6.40024 33.5119 3.44867 32.6 1.00024M38 6.40024C38 6.40024 34.0324 9.17362 32.6 11.8002" stroke="#E58411" stroke-linecap="square"/>
-                    </svg>
-                    </a></div>
-            </div>
-            <div class="containor">
-                <div class="title"><h2>Many Choices</h2>  </div>
-                <div class="description">We provide many unique work space choices so that you can choose the workspace to your liking.</div>
-                <div class="link"><a href="#"><p class="info">More Info</p> <svg width="39" height="13" viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.5 6.40024H38M38 6.40024C38 6.40024 33.5119 3.44867 32.6 1.00024M38 6.40024C38 6.40024 34.0324 9.17362 32.6 11.8002" stroke="#E58411" stroke-linecap="square"/>
-                    </svg>
-                    </a></div>
-            </div>
+        <div class="containor">
+          <div class="title"><h2>Affordable Price</h2></div>
+          <div class="description">
+            You can get a workspace of the highst quality at an affordable price
+            and still enjoy the facilities that are oly here.
+          </div>
+          <div class="link">
+            <a href="#"
+              ><p class="info">More Info</p>
+              <svg
+                width="39"
+                height="13"
+                viewBox="0 0 39 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.5 6.40024H38M38 6.40024C38 6.40024 33.5119 3.44867 32.6 1.00024M38 6.40024C38 6.40024 34.0324 9.17362 32.6 11.8002"
+                  stroke="#E58411"
+                  stroke-linecap="square"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
+        <div class="containor">
+          <div class="title"><h2>Many Choices</h2></div>
+          <div class="description">
+            We provide many unique work space choices so that you can choose the
+            workspace to your liking.
+          </div>
+          <div class="link">
+            <a href="#"
+              ><p class="info">More Info</p>
+              <svg
+                width="39"
+                height="13"
+                viewBox="0 0 39 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.5 6.40024H38M38 6.40024C38 6.40024 33.5119 3.44867 32.6 1.00024M38 6.40024C38 6.40024 34.0324 9.17362 32.6 11.8002"
+                  stroke="#E58411"
+                  stroke-linecap="square"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="page2">
-        <div class="heding"><h1>Best Selling Product</h1></div>
-        <div class="tab">
-            <ul>
-                <li class="active">Chair</li>
-                <li>Beds</li>
-                <li>Sofa</li>
-                <li>Lamp</li>
-            </ul>
+      <div class="heding"><h1>Best Selling Product</h1></div>
+      <div class="tab">
+        <ul>
+          <li class="active">Chair</li>
+          <li>Beds</li>
+          <li>Sofa</li>
+          <li>Lamp</li>
+        </ul>
+      </div>
+      <div class="card-containor">
+        <div class="card">
+          <div class="card-up">
+            <img src="./asset/chair1.png" alt="chair1" class="rotate" />
+            <div class="sedow"></div>
+          </div>
+          <div class="card-down">
+            <div class="info">
+              <p>Chair</p>
+              <h3>Sakarias Armchair</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="div-price">
+              <div class="price">$392</div>
+              <div class="plus-button">
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card-containor">
-            <div class="card">
-                <div class="card-up">
-                    <img src="./asset/chair1.png" alt="chair1">
-                    <div class="sedow"></div>
-                </div>
-                <div class="card-down">
-                    <div>
-                        <p>Chair</p>
-                        <h3>Sakarias Armchair</h3>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="price"></div>
-                        <div class="plus-button"></div>
-                    </div>
-                </div>
+        <div class="card">
+          <div class="card-up">
+            <img src="./asset/chair2.png" alt="chair2" class="rotate" />
+            <div class="sedow"></div>
+          </div>
+          <div class="card-down">
+            <div class="info">
+              <p>Chair</p>
+              <h3>Sakarias Armchair</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
             </div>
-            <div class="card">
-                <div class="card-up">
-                    <img src="./asset/chair2.png" alt="chair2">
-                    <div class="sedow">
-                        <div>
-                            <p>Chair</p>
-                            <h3>Sakarias Armchair</h3>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="price"></div>
-                            <div class="plus-button"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-down"></div>
+            <div class="div-price">
+              <div class="price">$392</div>
+              <div class="plus-button">
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
             </div>
-            <div class="card">
-                <div class="card-up">
-                    <img src="./asset/chair3.png" alt="chair3">
-                    <div class="sedow"></div>
-                </div>
-                <div class="card-down">
-                    <div>
-                        <p>Chair</p>
-                        <h3>Sakarias Armchair</h3>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="price"></div>
-                        <div class="plus-button"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-up">
-                    <img src="./asset/chair4.png" alt="chair4">
-                    <div class="sedow"></div>
-                </div>
-                <div class="card-down">
-                    <div>
-                        <p>Chair</p>
-                        <h3>Sakarias Armchair</h3>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="price"></div>
-                        <div class="plus-button"></div>
-                    </div>
-                </div>
-             </div>
+          </div>
         </div>
-        <div></div>
+
+        <div class="card">
+          <div class="card-up">
+            <img src="./asset/chair3.png" alt="chair3" class="rotate" />
+            <div class="sedow"></div>
+          </div>
+          <div class="card-down">
+            <div class="info">
+              <p>Chair</p>
+              <h3>Sakarias Armchair</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="div-price">
+              <div class="price">$392</div>
+              <div class="plus-button">
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-up">
+            <img src="./asset/chair4.png" alt="chair4" />
+            <div class="sedow"></div>
+          </div>
+          <div class="card-down">
+            <div class="info">
+              <p>Chair</p>
+              <h3>Sakarias Armchair</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="div-price">
+              <div class="price">$392</div>
+              <div class="plus-button">
+                <button><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div></div>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
