@@ -1,0 +1,223 @@
+.main{
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(180deg, rgba(255, 255, 255, 0) 86.13%, #FFFFFF 100%), url("./asset/landingpageBackground.jpeg")  ;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    font-family:'Gilroy', sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+.nav{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    top: 47px;
+    
+}
+.nav-item{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 478px;
+    height: 22px;
+    list-style-type: none;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: absolute ;
+    top: 40px;
+    align-items: center;
+    width: 100%;
+  
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+.ellipse{
+    background-color: #E58411;
+    border-radius: 100% ;
+    height: 25.24px;
+    width: 20px;
+    position: absolute;
+    left: 15px;
+    color: white;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+.cart{
+    display: flex;
+    position: relative;
+    right: 80px;
+}
+.logo{
+    color: white;
+    position: relative;
+    left:80px;
+}
+.main-text{
+    width: 861px;
+    height: 208px;
+    font-size: 39px;
+    text-align: center;
+    
+}
+.text{
+    width: 606px;
+    height: 76px;
+    font-weight: 200;
+    font-size: 24px;
+    text-align: center;
+    
+  
+}
+.search{
+    height: 54px;
+    width:344px;
+    position: relative;
+    display: flex;
+}
+.input{
+    height: 100%;
+    width: 100%; 
+    border: 0px;
+    border-radius: 42px;
+    background-color: #ffffff64;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    font-weight: 200;
+
+}
+.search-button{
+    position: absolute  ;
+    right: 0px;
+    height: 40px;
+    width: 40px;
+    border: 0px;
+    background-color:#E58411;
+    border-radius: 100%;
+    margin: 7px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+    justify-content: space-around;
+
+}
+.input::placeholder {
+    color:white; 
+    font-weight: 100;
+}
+.second{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    height: 400px;
+    padding: 0px 100px;
+}
+.one{
+    font-weight: 700;
+    font-size: 42px;
+    width: 242px;
+    height: 104px;
+}
+.containor{
+    width: fit-content;
+    margin: 20px;
+
+}
+.div-containor{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.list-furniture{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 18px;
+}
+.containor .description{
+    font-size: 16px;
+    font-weight: 300;
+    width: 332px;
+    height: 90px;
+    margin: 20px 0px;
+    line-height: 29.6px;
+}
+
+.containor .link a{
+    color:  #E58411;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    width: 121px;
+}
+.page2{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page2 .tab ul{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    height: 100%;
+    width: 100%;    
+
+}
+.page2 .tab{
+   width: 348px;
+   height: 57px;
+   background-color: #EEEEEE;
+   border-radius: 44px;
+   padding-left:5px ;
+}
+.page2 .tab ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    height: 45px;
+    border-radius: 32px;
+}
+.page2 .tab ul .active{
+    background-color: white;
+}
