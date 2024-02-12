@@ -221,3 +221,19 @@ li a{
 .page2 .tab ul .active{
     background-color: white;
 }
+.page2 .card-containor{
+    width: 1198.35px;
+    height: 492px;
+    display: flex;
+
+
+}
+.page2 .card-containor .card{
+    width: 268.09px;
+    height: 492px;
+}
+.page2 .card-containor .card-up img{
+    width: 217.9px;
+    height: 255.9px;
+    
+}
