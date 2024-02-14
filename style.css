@@ -185,7 +185,7 @@ li a {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background: #f7f7f7;
 }
@@ -492,6 +492,9 @@ li a {
     bottom: 10px;
    
 }
+.reviewcard {
+  transition: transform 0.5s ease-in-out; 
+}
 .review .leftarrow{
     box-shadow: 0px 7.03125px 19.53125px 0px #0000000F;
     border-radius: 100%;
@@ -610,6 +613,9 @@ li a {
 
   @media (max-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
   @media (max-width:480px)  { 
+    body{
+      overflow-x: hidden;
+    }
       .second{
         flex-direction: column;
       }
@@ -652,6 +658,7 @@ li a {
       }
       .page2 .main-containor .new4{
         width: 80vw;
+        overflow-x: hidden;
       }
       .page3 {
           flex-direction: column;
@@ -684,6 +691,7 @@ li a {
       margin-left: 0px;
       justify-content: space-evenly;
       align-items: center;
+     
     }
     .page4 .image{
       display: none;
@@ -692,8 +700,15 @@ li a {
       width: 100vw;
     }
     .page5 .main-review{
-      
-      width: 80%;
+      overflow-x: hidden;
+      width: fit-content;
+    }
+    .page5 .main-review .review {
+      width: 100vw;
+    }
+    .page5 .main-review .review .new{
+      width: 100%;
+      overflow-x: hidden;
     }
     .footer{
       flex-direction: column;
@@ -716,6 +731,12 @@ li a {
     }
     .footer .main-containor .two{
       justify-content: space-evenly;
+    }
+    .footer .copyright{
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
    }
   @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }

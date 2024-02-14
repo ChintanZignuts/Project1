@@ -47,3 +47,30 @@ function updateCard(direction) {
     tabs[currentCardIndex].classList.add("active");
   }, 300);
 }
+
+let currentIndex = 0;
+
+function rotateCards(direction) {
+  console.log("card");
+  const reviewCards = document.querySelectorAll(".reviewcard");
+  const totalCards = reviewCards.length;
+
+  if (direction === "right") {
+    currentIndex = (currentIndex + 1) % totalCards;
+  } else if (direction === "left") {
+    currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+  }
+
+  reviewCards.forEach((card, index) => {
+    const rotation = (index - currentIndex) * 120; // Adjust the rotation angle as needed
+    card.style.transform = `rotateY(${rotation}deg)`;
+  });
+}
+console.log(document.querySelector(".leftarrow"));
+document.querySelector(".leftarrow").addEventListener("click", function () {
+  rotateCards("left");
+});
+
+document.querySelector(".rightarrow").addEventListener("click", function () {
+  rotateCards("right");
+});
