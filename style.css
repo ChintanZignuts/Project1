@@ -1,6 +1,6 @@
 .main {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0) 86.13%,
@@ -8,8 +8,8 @@
     ),
     url("./asset/landingpageBackground.jpeg");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-  background-position: center;
   color: white;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ body {
   padding: 0px;
   font-family: "Gilroy", sans-serif;
   font-size: 18px;
-  overflow-x: hidden;
+ 
 }
 .nav {
   text-decoration: none;
@@ -50,7 +50,7 @@ body {
   position: absolute;
   top: 40px;
   align-items: center;
-  width: 100%;
+  width: 100vw;
 }
 
 li a {
@@ -607,4 +607,118 @@ li a {
   .new4{
     transition: transform 0.3s ease;
   }
-    
+
+  @media (max-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+  @media (max-width:480px)  { 
+      .second{
+        flex-direction: column;
+      }
+      .second .div-containor{
+        flex-direction: column;
+      }
+      .main .navbar .nav {
+          display: none;
+      }
+      .main .dots{
+        height: 50px;
+        width: 50px;
+        display: flex;
+       justify-content: center;
+       align-items:center ;
+      }
+      .main .logo{
+        left:0px;
+      }
+      .main .cart{
+        right: 10px;
+      }
+      .main .content .main-text{
+        width: 80%;
+        height: fit-content;
+        font-size: 18px;
+      }
+      .main .content .text{
+        width: 80%;
+        height: fit-content;
+        margin-bottom: 10px;
+      }
+      .second{
+        height: 100vh;
+        padding: 0;
+        justify-content: space-around;
+      }
+      .second .div-containor{
+        width: 90%;
+      }
+      .page2 .main-containor .new4{
+        width: 80vw;
+      }
+      .page3 {
+          flex-direction: column;
+          height: 100vh;
+          width: 100vw;
+          justify-content:center; 
+          align-items: center;
+      }
+      .page3 .image{
+        display: none;
+      }
+      .page3 .main-content{
+        width: 80%;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 0px;
+      }
+      .page3 .main-content h2,.page3 .main-content p,.page4 .main-content h2,.page4 .main-content p{
+        width: 80%;
+        text-align: center;
+      }
+      .page4 {
+        flex-direction: column;
+        width: 100vw;
+    }
+    .page4 .main-content{
+      height: 100%;
+      width: 100%;
+      margin-left: 0px;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .page4 .image{
+      display: none;
+    }
+    .page5{
+      width: 100vw;
+    }
+    .page5 .main-review{
+      
+      width: 80%;
+    }
+    .footer{
+      flex-direction: column;
+      height: fit-content;
+      height: 80vh;
+      width: 100vw;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .footer .main-containor{
+      flex-direction: column;
+      height: fit-content;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .footer .main-containor .one1{
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .footer .main-containor .two{
+      justify-content: space-evenly;
+    }
+   }
+  @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+  @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+  @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+  @media (min-width:1281px) { /* hi-res laptops and desktops */ }
